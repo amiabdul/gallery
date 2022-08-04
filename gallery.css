@@ -47,8 +47,14 @@ img{
 }
 @media (max-width:768px){
   .column img{
-    width: 250px;
-    height: 120px;
+    width: 270px;
+    height: 150px;
+  }
+  .row{
+    padding: 10px;
+  }
+  .column{
+    margin: 10px 40px;
   }
 }
 @media (max-width:425px){
