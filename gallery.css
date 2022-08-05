@@ -25,42 +25,67 @@ h3 a{
 .row{
   display: flex;
   flex-wrap: wrap; 
-  gap: 5px;
+  gap: 10px;
   border: 3px solid brown;
-  padding: 30px;
+  padding: 20px;
   background: linear-gradient(to left,orange,rgb(77, 52, 5));
+  background: -webkit-linear-gradient(to left,orange,rgb(77, 52, 5));
+  background: -o-linear-gradient(to left,orange,rgb(77, 52, 5));
+  background: -moz-linear-gradient(to left,orange,rgb(77, 52, 5));
 }
 .column{
  flex: 1; 
  align-self: center;
 }
-img{
+.column img{
   border-radius: 10px;
   width: 100%;
   height: 200px;
   margin-bottom: 10px;
 }
+@media (max-width: 2560px){
+  .column img{
+    height: 300px;
+  }
+}
+@media (max-width: 1440px){
+  .column img{
+    height: 250px;
+  }
+}
 @media (max-width:1024px){
-  img{
+  .column img{
     height: 150px;
   }
 }
 @media (max-width:768px){
   .column img{
-    width: 270px;
+    width: 250px;
     height: 150px;
-  }
-  .row{
-    padding: 10px;
   }
   .column{
     margin: 10px 40px;
   }
+  #image{
+    height: 100px;
+    display: flex;
+    flex-direction: column;
+  }
+  .social{
+    margin-left: 15px;
+  }
 }
+
 @media (max-width:425px){
   .column img{
     height: 250px;
-    min-width: 350px;
+    width: 350px;
+  }
+  .row{
+    padding: 10px 30px;
+  }
+  .column{
+    margin: 5px 10px;
   }
   #image{
     height: 100px;
@@ -78,13 +103,13 @@ img{
 @media (max-width:375px){
   .column img{
     height: 200px;
-    min-width: 300px;
+    width: 280px;
   }
 }
 @media (max-width:320px){
   .column img{
     height: 180px;
-    min-width: 250px;
+    width: 245px;
   }
 }
 
